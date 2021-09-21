@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 body {
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
@@ -13,6 +16,7 @@ body {
     min-height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
 	font-size: 12px;
+    background-attachment: fixed;
 }
 
 .card {
@@ -107,7 +111,12 @@ body {
 .attribution a {
     color: hsl(273, 75%, 66%);
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 330px) {
+    .card {
+        width: 130px;
+    }
+}
+@media only screen and (max-width: 915px) {
     body {
         min-height: 130vh;
     }
